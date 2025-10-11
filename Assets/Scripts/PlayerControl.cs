@@ -41,7 +41,7 @@ public class PlayerControl : MonoBehaviour
 
     void MoveThePlayer()
     {
-        Vector3 movement = CameraDirection(smoothInputMovement) * movementSpeed * Time.deltaTime;
+        Vector3 movement = movementSpeed * Time.deltaTime * CameraDirection(smoothInputMovement);
         playerRb.MovePosition(transform.position + movement);
     }
 

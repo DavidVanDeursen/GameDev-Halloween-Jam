@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.871514
+      value: 17.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.206819
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.1483064
+      value: 21.666431
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_Name
-      value: Mage
+      value: Player Character
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65,6 +65,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4188993615111984069}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2175750862422490074}
   m_SourcePrefab: {fileID: 100100000, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
 --- !u!1 &60153471732311340 stripped
 GameObject:
@@ -83,9 +86,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cebcd2301f688f3468b8cdd407870a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  movementSmoothingSpeed: 1
+  movementSmoothingSpeed: 8
+  movementSpeed: 15
+  rotationSpeed: 0.5
   animator: {fileID: 0}
   playerRb: {fileID: 0}
+  mainCamera: {fileID: 0}
 --- !u!95 &4145066301920956201
 Animator:
   serializedVersion: 7
@@ -130,8 +136,30 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!195 &2175750862422490074
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60153471732311340}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
