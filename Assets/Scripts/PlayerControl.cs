@@ -8,10 +8,11 @@ public class PlayerControl : MonoBehaviour
 
     public float movementSmoothingSpeed;
     public float movementSpeed;
-    public float rotationSpeed ;
+    public float rotationSpeed;
+    public float gravity;
 
     public Animator animator;
-    public Rigidbody playerRb;
+    public CharacterController controller;
     public Camera mainCamera; 
 
     private Vector3 rawInputMovement;
@@ -21,7 +22,7 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        playerRb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
         moveAction = InputSystem.actions.FindAction("Move");
     }
 
@@ -42,15 +43,15 @@ public class PlayerControl : MonoBehaviour
     void MoveThePlayer()
     {
         Vector3 movement = movementSpeed * Time.deltaTime * CameraDirection(smoothInputMovement);
-        playerRb.MovePosition(transform.position + movement);
+        movement.y =  -gravity;
+        controller.Move(movement);
     }
 
     void TurnThePlayer()
     {
         if (smoothInputMovement.sqrMagnitude > 0.01f)
         {
-            Quaternion rotation = Quaternion.Slerp(playerRb.rotation, Quaternion.LookRotation(CameraDirection(smoothInputMovement)), rotationSpeed);
-            playerRb.MoveRotation(rotation);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(CameraDirection(smoothInputMovement)), rotationSpeed);
         }
     }
 
