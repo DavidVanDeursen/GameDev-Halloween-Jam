@@ -256,6 +256,69 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1001 &367030483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.871514
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.206819
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.1483064
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      propertyPath: m_Name
+      value: Mage
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648835272}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 648835273}
+  m_SourcePrefab: {fileID: 100100000, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,6 +446,41 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &648835270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+  m_PrefabInstance: {fileID: 367030483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &648835272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648835270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebcd2301f688f3468b8cdd407870a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  movementSmoothingSpeed: 1
+  anim: {fileID: 0}
+--- !u!111 &648835273
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648835270}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 3543698089625107784, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,3 +537,4 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 367030483}
