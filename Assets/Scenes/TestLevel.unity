@@ -10164,6 +10164,7 @@ GameObject:
   - component: {fileID: 623305328}
   - component: {fileID: 623305331}
   - component: {fileID: 623305332}
+  - component: {fileID: 623305333}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10214,7 +10215,7 @@ Camera:
   far clip plane: 1000
   field of view: 60.000004
   orthographic: 0
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -10238,13 +10239,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623305327}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.079669714, y: -0.90774965, z: 0.20124324, w: 0.3593669}
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
   m_LocalPosition: {x: 24.56, y: 10.55, z: 26.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 25, y: -136.804, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!114 &623305331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10386,6 +10387,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &623305333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623305327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d11be84fd58824a8cc171f6286a925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  player: {fileID: 1312775371}
 --- !u!1001 &624140333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16960,33 +16974,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4188993615111984069, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6956177028512957859, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 623305329}
-    - target: {fileID: 6956177028512957859, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
-      propertyPath: movementSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956177028512957859, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
-      propertyPath: rotationSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6956177028512957859, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
-      propertyPath: movementSmoothingSpeed
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 60153471732311340, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1312775372}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
 --- !u!1001 &1137833515
 PrefabInstance:
@@ -19327,33 +19322,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c051e73fc67e7db47aedd783ffee583e, type: 3}
   m_PrefabInstance: {fileID: 1309341025}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1312775367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 60153471732311340, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
+--- !u!4 &1312775371 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 837218658180415382, guid: f6e03c5843c61d2428233ac219a38458, type: 3}
   m_PrefabInstance: {fileID: 1134801433}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1312775372
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312775367}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &1317810653
 PrefabInstance:
   m_ObjectHideFlags: 0
