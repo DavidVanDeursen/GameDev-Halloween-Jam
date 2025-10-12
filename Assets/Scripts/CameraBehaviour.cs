@@ -4,10 +4,11 @@ public class CameraBehaviour : MonoBehaviour
 {
 
     public Transform player;
+    public Vector3 cameraOffset;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.transform.position + new Vector3(0, 5, -5);
+        transform.position = player.transform.position + cameraOffset;
     }
 }

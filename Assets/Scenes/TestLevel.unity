@@ -12776,6 +12776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   player: {fileID: 1312775371}
+  cameraOffset: {x: 0, y: 10, z: -10}
 --- !u!1 &623339024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a16c2bde303c7704fbfea3bdeb5ec1e5, type: 3}
