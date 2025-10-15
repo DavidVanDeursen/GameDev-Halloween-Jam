@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7955685658753750175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.00673
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.267
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.57
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      propertyPath: m_Name
+      value: Arrow_Tower
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 1168437713928847705, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+    - {fileID: -3606650129264159978, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7163240616112345014}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1775705039186272065}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 869135818115544513}
+  m_SourcePrefab: {fileID: 100100000, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+--- !u!1 &7109262025391532494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d48b2cfcae5ebeb4aa0239fbbdcfd73d, type: 3}
+  m_PrefabInstance: {fileID: 7955685658753750175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7163240616112345014
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109262025391532494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c60b197025cd95409c9a10926457f12, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &1775705039186272065
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109262025391532494}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.9606342, z: 1}
+  m_Center: {x: 0, y: 1.240201, z: 0}
+--- !u!114 &869135818115544513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7109262025391532494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3f964a0ae56b94baf923763a43576a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerBehaviour
+  projectilePrefab: {fileID: 4779929620976119183, guid: 32d01f3c459ffd841bba8665c5d1a5e3, type: 3}

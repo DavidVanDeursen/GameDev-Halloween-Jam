@@ -138,7 +138,10 @@ PrefabInstance:
       addedObject: {fileID: 4145066301920956201}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5784580717259256548}
+      addedObject: {fileID: 8093040109918539670}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6341381855639468690}
   m_SourcePrefab: {fileID: 100100000, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
 --- !u!1 &60153471732311340 stripped
 GameObject:
@@ -161,8 +164,8 @@ MonoBehaviour:
   movementSpeed: 15
   rotationSpeed: 0.5
   gravity: 0.05
-  animator: {fileID: 0}
-  controller: {fileID: 0}
+  animator: {fileID: 4145066301920956201}
+  controller: {fileID: 8093040109918539670}
   mainCamera: {fileID: 0}
 --- !u!95 &4145066301920956201
 Animator:
@@ -186,7 +189,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!143 &5784580717259256548
+--- !u!143 &8093040109918539670
 CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -211,6 +214,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6341381855639468690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60153471732311340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa08de806981ed4fb2e87feb1e9d976, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TowerPlacement
+  towerPrefab: {fileID: 0}
+  previewMaterial: {fileID: 0}
 --- !u!4 &4290188347481052358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5215991901736301381, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
