@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.11
+      value: 3.021
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.666431
+      value: 24.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       propertyPath: m_LocalRotation.w
@@ -138,7 +138,7 @@ PrefabInstance:
       addedObject: {fileID: 4145066301920956201}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4188993615111984069}
+      addedObject: {fileID: 5784580717259256548}
   m_SourcePrefab: {fileID: 100100000, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
 --- !u!1 &60153471732311340 stripped
 GameObject:
@@ -160,7 +160,7 @@ MonoBehaviour:
   movementSmoothingSpeed: 8
   movementSpeed: 15
   rotationSpeed: 0.5
-  gravity: 0
+  gravity: 0.05
   animator: {fileID: 0}
   controller: {fileID: 0}
   mainCamera: {fileID: 0}
@@ -186,33 +186,31 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &4188993615111984069
-Rigidbody:
+--- !u!143 &5784580717259256548
+CharacterController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60153471732311340}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &4290188347481052358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5215991901736301381, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}

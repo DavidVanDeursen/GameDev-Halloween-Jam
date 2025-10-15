@@ -6,6 +6,7 @@ public class FollowObject : MonoBehaviour
     public Transform target;
     public NavMeshAgent agent;
     public Animator animator;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,5 +19,5 @@ public class FollowObject : MonoBehaviour
     {
         agent.SetDestination(target.position);
         animator.SetFloat("Velocity", agent.velocity.magnitude);
-    }
+    }   
 }

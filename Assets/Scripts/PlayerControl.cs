@@ -28,27 +28,25 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+        Move();
+    }
+
+
+    void Move()
+    {
+
         Vector2 moveValue = moveAction.ReadValue<Vector2>();
-        rawInputMovement = new Vector3(moveValue.x, 0 , moveValue.y);
+        rawInputMovement = new Vector3(moveValue.x, 0, moveValue.y);
 
         smoothInputMovement = Vector3.Lerp(smoothInputMovement, rawInputMovement, Time.deltaTime * movementSmoothingSpeed);
         animator.SetFloat("Velocity", smoothInputMovement.magnitude);
-
-        MoveThePlayer();
-        TurnThePlayer();
-
-    }
-
-
-    void MoveThePlayer()
-    {
+        
+        // Move Player
         Vector3 movement = movementSpeed * Time.deltaTime * CameraDirection(smoothInputMovement);
         movement.y =  -gravity;
         controller.Move(movement);
-    }
 
-    void TurnThePlayer()
-    {
+        // Rotate Player
         if (smoothInputMovement.sqrMagnitude > 0.01f)
         {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(CameraDirection(smoothInputMovement)), rotationSpeed);
