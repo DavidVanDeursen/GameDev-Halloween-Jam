@@ -142,6 +142,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6341381855639468690}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048486305978459816}
   m_SourcePrefab: {fileID: 100100000, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}
 --- !u!1 &60153471732311340 stripped
 GameObject:
@@ -162,10 +165,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   movementSmoothingSpeed: 8
   movementSpeed: 15
-  rotationSpeed: 0.5
+  rotationSpeed: 0.2
   gravity: 0.05
-  animator: {fileID: 4145066301920956201}
-  controller: {fileID: 8093040109918539670}
+  animator: {fileID: 0}
+  controller: {fileID: 0}
   mainCamera: {fileID: 0}
 --- !u!95 &4145066301920956201
 Animator:
@@ -226,8 +229,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa08de806981ed4fb2e87feb1e9d976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TowerPlacement
-  towerPrefab: {fileID: 0}
-  previewMaterial: {fileID: 0}
+  towerPrefab: {fileID: 7109262025391532494, guid: eca9e62e56a94864e88503067bb6b9bd, type: 3}
+  previewMaterial: {fileID: -7848952084472943420, guid: 5ede1e5918fe2ba4689c5320076b2588, type: 3}
+--- !u!114 &2048486305978459816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60153471732311340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660ce58dd6dfbfa4bb6204407ee64425, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerActions
+  animator: {fileID: 0}
+  staticPrefab: {fileID: 8253217323771770985, guid: 85ade530ba00b4a42a02588b093fe4ad, type: 3}
+  controller: {fileID: 0}
 --- !u!4 &4290188347481052358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5215991901736301381, guid: ae3e3c390e1905744b2afbc578a05761, type: 3}

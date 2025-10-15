@@ -500,9 +500,11 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Rewind AOE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": ""
+                    "name": "",
                     "id": "968652a8-57f7-47ed-addc-80980b01ea5b",
                     "path": "<Keyboard>/#(R)",
                     "interactions": "",
