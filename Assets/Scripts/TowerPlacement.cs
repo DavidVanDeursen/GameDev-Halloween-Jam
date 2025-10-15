@@ -13,6 +13,8 @@ public class TowerPlacement : MonoBehaviour
     private InputAction _rotateAction;
     private Quaternion _quaternion;
 
+    private bool _inBuildMode = false;
+
     void Start()
     {
         mainCamera = Camera.main;
@@ -31,7 +33,9 @@ public class TowerPlacement : MonoBehaviour
 
     void Update()
     {
-        HandleTowerPreviewAndPlacement();
+        if (InputSystem.actions.FindAction("Toggle Build").WasPressedThisFrame()) _inBuildMode = !_inBuildMode;
+        if (_inBuildMode == false) previewTower.SetActive(false);
+        if (_inBuildMode) HandleTowerPreviewAndPlacement();
     }
 
     public void HandleTowerPreviewAndPlacement()
